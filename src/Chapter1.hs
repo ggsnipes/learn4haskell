@@ -442,8 +442,6 @@ Implement the function that takes an integer value and returns the next 'Int'.
 >>> next (-4)
 -3
 
-next x = x + 1
-
 ♫ NOTE: The current function body is defined using a special function called
   "error". Don't panic, it is not broken. 'error' is like a placeholder, that
   evaluates to an exception if you try evaluating it. And it also magically fits
@@ -451,7 +449,7 @@ next x = x + 1
   function body with the proper implementation.
 -}
 next :: Int -> Int
-next x = error "next: not implemented!"
+next x = x + 1
 
 {- |
 After you've implemented the function (or even during the implementation), you
